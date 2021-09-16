@@ -17,15 +17,6 @@ class LogInController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        BitcoinSecertary.shared.bitcoinSect(url: url.api.rawValue) { dataRecieved, Error in
-            if Error == nil{
-                if let data = dataRecieved{
-                    print(data)
-                }
-            }else{
-                //print("error")
-            }
-        }
     }
     
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LogInController" customModule="BitcoinPrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoCurrency App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="dPb-PK-w5P">
-                                <rect key="frame" x="72" y="110" width="246" height="57"/>
+                                <rect key="frame" x="72" y="66" width="523" height="57"/>
                                 <color key="backgroundColor" red="0.91232150793075562" green="0.73072576522827148" blue="0.37343227863311768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="loC-90-F0e"/>
@@ -27,7 +27,7 @@
                                 <color key="highlightedColor" red="0.91232150793075562" green="0.73072576522827148" blue="0.37343227863311768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="pKx-aT-4gG">
-                                <rect key="frame" x="77.666666666666686" y="271.66666666666669" width="235" height="120"/>
+                                <rect key="frame" x="216" y="227.5" width="235" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vOB-CY-gKb">
                                         <rect key="frame" x="0.0" y="0.0" width="235" height="34"/>
@@ -81,18 +81,18 @@
             <objects>
                 <viewController storyboardIdentifier="vc2" id="wpY-ph-wGq" customClass="priceControllerViewController" customModule="BitcoinPrice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q0F-MR-rFW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lav-UZ-EqN">
-                                <rect key="frame" x="75" y="105" width="240" height="222"/>
+                                <rect key="frame" x="75" y="50" width="240" height="222"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="222" id="SWd-FQ-Z0J"/>
                                     <constraint firstAttribute="width" constant="240" id="bvE-Ec-Xna"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2Z-Bd-D3L">
-                                <rect key="frame" x="75" y="412" width="240" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="O2Z-Bd-D3L">
+                                <rect key="frame" x="75" y="302" width="240" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="jAv-eN-yH0"/>
                                     <constraint firstAttribute="height" constant="63" id="uzQ-UH-WpW"/>
@@ -105,10 +105,14 @@
                         <viewLayoutGuide key="safeArea" id="aRs-hR-yNj"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="lav-UZ-EqN" firstAttribute="top" secondItem="aRs-hR-yNj" secondAttribute="top" constant="105" id="9Gc-Rh-Zpx"/>
+                            <constraint firstItem="lav-UZ-EqN" firstAttribute="top" secondItem="aRs-hR-yNj" secondAttribute="top" constant="105" id="9Gc-Rh-Zpx">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstItem="aRs-hR-yNj" firstAttribute="trailing" secondItem="lav-UZ-EqN" secondAttribute="trailing" constant="75" id="Dsi-ig-dB2"/>
                             <constraint firstItem="O2Z-Bd-D3L" firstAttribute="centerX" secondItem="q0F-MR-rFW" secondAttribute="centerX" id="Ivp-So-WKK"/>
-                            <constraint firstItem="O2Z-Bd-D3L" firstAttribute="top" secondItem="lav-UZ-EqN" secondAttribute="bottom" constant="85" id="KoT-gp-y9I"/>
+                            <constraint firstItem="O2Z-Bd-D3L" firstAttribute="top" secondItem="lav-UZ-EqN" secondAttribute="bottom" constant="85" id="KoT-gp-y9I">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="lav-UZ-EqN" firstAttribute="centerX" secondItem="q0F-MR-rFW" secondAttribute="centerX" id="T4g-jO-DO1"/>
                             <constraint firstItem="lav-UZ-EqN" firstAttribute="leading" secondItem="aRs-hR-yNj" secondAttribute="leading" constant="75" id="bWZ-bn-elN"/>
                         </constraints>

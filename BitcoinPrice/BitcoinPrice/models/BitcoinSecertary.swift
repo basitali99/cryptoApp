@@ -22,15 +22,12 @@ struct BitcoinSecertary{
                 decodeData(dataToDecode: data) { decodedData, error in
                     if error == nil{
                         completion(decodedData,nil)
-                        print("data sent")
                     }else{
                         completion(nil,.DecodingError)
-                        print("data not sent")
                     }
                 }
             }else{
                 completion(nil,.NetworkingError)
-                print("there was networking error")
             }
         }
     }
@@ -42,11 +39,9 @@ func decodeData(dataToDecode:Any?, completion: @escaping ([DataModel]?,ErrorType
     do{
         let decode = try JSONDecoder().decode([DataModel].self, from: dataToDecode as! Data)
         DispatchQueue.main.async {
-            print("data decoded")
             completion(decode,nil)
         }
     }catch{
         completion(nil,.DecodingError)
-        print("data not decoded")
     }
 }
