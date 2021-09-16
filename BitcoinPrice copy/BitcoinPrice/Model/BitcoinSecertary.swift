@@ -7,13 +7,11 @@
 
 import Foundation
 
-
-
 struct BitcoinSecertary{
     
     static var shared = BitcoinSecertary()
     
-    func bitcoinSect(url:String, completion: @escaping ([DataModel]?,ErrorTypes?) ->()){
+    func bitcoinSect(url:String, completion: @escaping ([DataModel]?) ->()){
         guard let url = URL(string: url) else {return}
         var request = URLRequest(url: url)
         request.httpMethod = Method.Get.rawValue
@@ -21,23 +19,23 @@ struct BitcoinSecertary{
             if error == nil{
                 decodeData(dataToDecode: data) { decodedData, error in
                     if error == nil{
-                        completion(decodedData,nil)
+                        completion(decodedData)
                     }else{
-                        completion(nil,.DecodingError)
+                        completion(nil)
+                        print(String(describing: error))
                     }
                 }
             }else{
-                completion(nil,.NetworkingError)
+                completion(nil)
+                print(String(describing: error))
             }
         }
     }
 }
 
-
-
 func decodeData(dataToDecode:Any?, completion: @escaping ([DataModel]?,ErrorTypes?) ->()){
     do{
-        let decode = try JSONDecoder().decode([DataModel].self, from: dataToDecode as! Data)
+        let decode = try JSONDecoder().decode([DataModel].self, from: (dataToDecode as! Data))
         DispatchQueue.main.async {
             completion(decode,nil)
         }

@@ -7,16 +7,15 @@
 
 import UIKit
 
-extension LogInController : UITextFieldDelegate{
+extension LogInViewController : UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if userNameText.text == LoginDetails.UserName.rawValue && passwordText.text == LoginDetails.Password.rawValue{
-            let vc = storyboard?.instantiateViewController(identifier: ViewController.SecondScreen.rawValue) as! priceControllerViewController
+        if UserNameTextField.text == LoginDetails.UserName.rawValue && PasswordTextField.text == LoginDetails.Password.rawValue{
+            let vc = storyboard?.instantiateViewController(identifier: ViewController.SecondScreen.rawValue) as! PriceViewController
             present(vc, animated: true, completion: nil)
             return true
         }else{
             return false
         }
     }
-    
 }

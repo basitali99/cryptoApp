@@ -1,5 +1,5 @@
 //
-//  LogInController.swift
+//  LogInViewController.swift
 //  BitcoinPrice
 //
 //  Created by basit ch on 9/15/21.
@@ -7,16 +7,13 @@
 
 import UIKit
 
-class LogInController: UIViewController {
+class LogInViewController: UIViewController {
     
-    @IBOutlet weak var userNameText: UITextField!
-    
-    @IBOutlet weak var passwordText: UITextField!
-    
+    @IBOutlet weak var UserNameTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 }
-

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1009455926F32D3C009C1648 /* Extension-PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009455826F32D3C009C1648 /* Extension-PriceViewController.swift */; };
 		106F635F26F1C7AA00317FFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F635E26F1C7AA00317FFF /* AppDelegate.swift */; };
 		106F636126F1C7AA00317FFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F636026F1C7AA00317FFF /* SceneDelegate.swift */; };
-		106F636326F1C7AA00317FFF /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F636226F1C7AA00317FFF /* LogInController.swift */; };
+		106F636326F1C7AA00317FFF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F636226F1C7AA00317FFF /* LogInViewController.swift */; };
 		106F636626F1C7AA00317FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106F636426F1C7AA00317FFF /* Main.storyboard */; };
 		106F636826F1C7AB00317FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106F636726F1C7AB00317FFF /* Assets.xcassets */; };
 		106F636B26F1C7AB00317FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106F636926F1C7AB00317FFF /* LaunchScreen.storyboard */; };
-		106F637326F1C99500317FFF /* extensionLogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F637226F1C99500317FFF /* extensionLogInController.swift */; };
+		106F637326F1C99500317FFF /* Extension-Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F637226F1C99500317FFF /* Extension-Textfield.swift */; };
 		106F637D26F1D82C00317FFF /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 106F637C26F1D82C00317FFF /* photo.png */; };
-		106F637F26F1D8A300317FFF /* priceControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F637E26F1D8A300317FFF /* priceControllerViewController.swift */; };
+		106F637F26F1D8A300317FFF /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F637E26F1D8A300317FFF /* PriceViewController.swift */; };
 		106F638226F1E5F300317FFF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F638126F1E5F300317FFF /* NetworkManager.swift */; };
 		106F638426F1E72B00317FFF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F638326F1E72B00317FFF /* DataModel.swift */; };
 		106F638626F1E83B00317FFF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F638526F1E83B00317FFF /* Enums.swift */; };
@@ -23,17 +24,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1009455826F32D3C009C1648 /* Extension-PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-PriceViewController.swift"; sourceTree = "<group>"; };
 		106F635B26F1C7AA00317FFF /* BitcoinPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106F635E26F1C7AA00317FFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106F636026F1C7AA00317FFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		106F636226F1C7AA00317FFF /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		106F636226F1C7AA00317FFF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		106F636526F1C7AA00317FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		106F636726F1C7AB00317FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		106F636A26F1C7AB00317FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		106F636C26F1C7AB00317FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		106F637226F1C99500317FFF /* extensionLogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionLogInController.swift; sourceTree = "<group>"; };
+		106F637226F1C99500317FFF /* Extension-Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Textfield.swift"; sourceTree = "<group>"; };
 		106F637C26F1D82C00317FFF /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
-		106F637E26F1D8A300317FFF /* priceControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceControllerViewController.swift; sourceTree = "<group>"; };
+		106F637E26F1D8A300317FFF /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 		106F638126F1E5F300317FFF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		106F638326F1E72B00317FFF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		106F638526F1E83B00317FFF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -75,33 +77,34 @@
 				106F636C26F1C7AB00317FFF /* Info.plist */,
 				106F636726F1C7AB00317FFF /* Assets.xcassets */,
 				106F637C26F1D82C00317FFF /* photo.png */,
-				106F637626F1D62400317FFF /* controllers */,
-				106F637726F1D64A00317FFF /* view */,
-				106F638026F1E5CB00317FFF /* models */,
+				106F637626F1D62400317FFF /* Controller */,
+				106F637726F1D64A00317FFF /* View */,
+				106F638026F1E5CB00317FFF /* Model */,
 			);
 			path = BitcoinPrice;
 			sourceTree = "<group>";
 		};
-		106F637626F1D62400317FFF /* controllers */ = {
+		106F637626F1D62400317FFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				106F636226F1C7AA00317FFF /* LogInController.swift */,
-				106F637226F1C99500317FFF /* extensionLogInController.swift */,
-				106F637E26F1D8A300317FFF /* priceControllerViewController.swift */,
+				106F636226F1C7AA00317FFF /* LogInViewController.swift */,
+				106F637E26F1D8A300317FFF /* PriceViewController.swift */,
+				1009455826F32D3C009C1648 /* Extension-PriceViewController.swift */,
+				106F637226F1C99500317FFF /* Extension-Textfield.swift */,
 			);
-			path = controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		106F637726F1D64A00317FFF /* view */ = {
+		106F637726F1D64A00317FFF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				106F636426F1C7AA00317FFF /* Main.storyboard */,
 				106F636926F1C7AB00317FFF /* LaunchScreen.storyboard */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
-		106F638026F1E5CB00317FFF /* models */ = {
+		106F638026F1E5CB00317FFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				106F638126F1E5F300317FFF /* NetworkManager.swift */,
@@ -109,7 +112,7 @@
 				106F638326F1E72B00317FFF /* DataModel.swift */,
 				106F638526F1E83B00317FFF /* Enums.swift */,
 			);
-			path = models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,13 +188,14 @@
 			files = (
 				106F638426F1E72B00317FFF /* DataModel.swift in Sources */,
 				106F638226F1E5F300317FFF /* NetworkManager.swift in Sources */,
-				106F636326F1C7AA00317FFF /* LogInController.swift in Sources */,
+				106F636326F1C7AA00317FFF /* LogInViewController.swift in Sources */,
 				106F635F26F1C7AA00317FFF /* AppDelegate.swift in Sources */,
-				106F637F26F1D8A300317FFF /* priceControllerViewController.swift in Sources */,
+				106F637F26F1D8A300317FFF /* PriceViewController.swift in Sources */,
 				106F636126F1C7AA00317FFF /* SceneDelegate.swift in Sources */,
 				106F638826F1E9D700317FFF /* BitcoinSecertary.swift in Sources */,
+				1009455926F32D3C009C1648 /* Extension-PriceViewController.swift in Sources */,
 				106F638626F1E83B00317FFF /* Enums.swift in Sources */,
-				106F637326F1C99500317FFF /* extensionLogInController.swift in Sources */,
+				106F637326F1C99500317FFF /* Extension-Textfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

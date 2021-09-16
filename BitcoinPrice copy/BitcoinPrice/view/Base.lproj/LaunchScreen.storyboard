@@ -16,13 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-TA-iKA">
-                                <rect key="frame" x="87" y="269" width="240" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-TA-iKA">
+                                <rect key="frame" x="30.5" y="269" width="353" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="353" id="V3U-St-evV"/>
+                                    <constraint firstAttribute="height" constant="246" id="moT-ze-hma"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Ea3-TA-iKA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="GME-k1-VT5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ea3-TA-iKA" secondAttribute="trailing" constant="30.5" id="Ll4-Tp-x3P"/>
+                            <constraint firstItem="Ea3-TA-iKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30.5" id="UGp-uh-3JD"/>
+                            <constraint firstItem="Ea3-TA-iKA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sHJ-gq-fgG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

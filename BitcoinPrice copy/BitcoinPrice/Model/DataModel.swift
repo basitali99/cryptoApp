@@ -8,6 +8,7 @@
 import Foundation
 
 struct DataModel : Decodable{
+    let logo_url : String
     let price : String
 }
 

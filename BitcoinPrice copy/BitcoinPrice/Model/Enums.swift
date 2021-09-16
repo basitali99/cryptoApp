@@ -17,7 +17,6 @@ enum LoginDetails : String{
     case Password = "123456"
 }
 
-
 enum ViewController : String{
     case SecondScreen = "vc2"
 }
@@ -26,6 +25,10 @@ enum Method : String{
     case Get = "Get"
 }
 
-enum url : String{
-    case api = "https://api.nomics.com/v1/currencies/ticker?key=5e3a2a23d96dcdd5978032f2f7a3ab4558854f3f&ids=BTC"
+enum Url : String{
+    case Api = "https://api.nomics.com/v1/currencies/ticker?key=5e3a2a23d96dcdd5978032f2f7a3ab4558854f3f&ids=BTC"
 }
+
+
+
+
