@@ -15,11 +15,9 @@ struct NetworkManager{
         URLSession.shared.dataTask(with: url) {data , response , error in
             let Response = response as! HTTPURLResponse
             if error == nil{
-                print("data recieved")
                 completion(data,Response,nil)
             }else{
                 completion(nil,Response,.NetworkingError)
-                print("data not recieved")
             }
         }.resume()
     }
